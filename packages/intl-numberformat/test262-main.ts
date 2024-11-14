@@ -786,7 +786,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "سوم قيرغستاني"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -1359,9 +1359,16 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "SKK",
         "symbol": "SKK"
       },
-      "SLL": {
+      "SLE": {
         "displayName": {
           "other": "ليون سيراليوني"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "ليون سيراليوني - 1964-2022"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -1694,6 +1701,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "$",
         "symbol": "EC$"
       },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
       "XDR": {
         "displayName": {
           "other": "حقوق السحب الخاصة"
@@ -1850,20 +1863,10 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       }
     },
     "nu": [
-      "arab",
       "latn"
     ],
     "numbers": {
       "currency": {
-        "arab": {
-          "accounting": "‏#,##0.00 ¤",
-          "currencySpacing": {
-            "afterInsertBetween": " ",
-            "beforeInsertBetween": " "
-          },
-          "standard": "‏#,##0.00 ¤",
-          "unitPattern": "{0} {1}"
-        },
         "latn": {
           "accounting": "؜#,##0.00¤;(؜#,##0.00¤)",
           "currencySpacing": {
@@ -1913,89 +1916,6 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         }
       },
       "decimal": {
-        "arab": {
-          "long": {
-            "1000": {
-              "few": "0 آلاف",
-              "other": "0 ألف"
-            },
-            "10000": {
-              "other": "00 ألف"
-            },
-            "100000": {
-              "other": "000 ألف"
-            },
-            "1000000": {
-              "few": "0 ملايين",
-              "other": "0 مليون"
-            },
-            "10000000": {
-              "few": "00 ملايين",
-              "other": "00 مليون"
-            },
-            "100000000": {
-              "other": "000 مليون"
-            },
-            "1000000000": {
-              "other": "0 مليار"
-            },
-            "10000000000": {
-              "other": "00 مليار"
-            },
-            "100000000000": {
-              "other": "000 مليار"
-            },
-            "1000000000000": {
-              "other": "0 ترليون"
-            },
-            "10000000000000": {
-              "other": "00 ترليون"
-            },
-            "100000000000000": {
-              "other": "000 ترليون"
-            }
-          },
-          "short": {
-            "1000": {
-              "few": "0 آلاف",
-              "other": "0 ألف"
-            },
-            "10000": {
-              "other": "00 ألف"
-            },
-            "100000": {
-              "other": "000 ألف"
-            },
-            "1000000": {
-              "other": "0 مليون"
-            },
-            "10000000": {
-              "other": "00 مليون"
-            },
-            "100000000": {
-              "other": "000 مليون"
-            },
-            "1000000000": {
-              "other": "0 مليار"
-            },
-            "10000000000": {
-              "other": "00 مليار"
-            },
-            "100000000000": {
-              "other": "000 مليار"
-            },
-            "1000000000000": {
-              "other": "0 ترليون"
-            },
-            "10000000000000": {
-              "other": "00 ترليون"
-            },
-            "100000000000000": {
-              "other": "000 ترليون"
-            }
-          },
-          "standard": "#,##0.###"
-        },
         "latn": {
           "long": {
             "1000": {
@@ -2081,30 +2001,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         }
       },
       "nu": [
-        "arab",
         "latn"
       ],
       "percent": {
-        "arab": "#,##0%",
         "latn": "#,##0%"
       },
       "symbols": {
-        "arab": {
-          "approximatelySign": "~",
-          "decimal": "٫",
-          "exponential": "اس",
-          "group": "٬",
-          "infinity": "∞",
-          "list": "؛",
-          "minusSign": "؜-",
-          "nan": "ليس رقم",
-          "perMille": "؉",
-          "percentSign": "٪؜",
-          "plusSign": "؜+",
-          "rangeSign": "–",
-          "superscriptingExponent": "×",
-          "timeSeparator": ":"
-        },
         "latn": {
           "approximatelySign": "~",
           "decimal": ".",
@@ -2459,6 +2361,8 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "kilometer": {
           "long": {
+            "few": "{0} كيلومترات",
+            "many": "{0} كيلومترًا",
             "other": "{0} كيلومتر"
           },
           "narrow": {
@@ -2551,8 +2455,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "few": "{0} أمتار",
             "many": "{0} مترًا",
             "one": "متر",
-            "other": "{0} متر",
-            "two": "متران"
+            "other": "{0} متر"
           },
           "narrow": {
             "other": "{0} م"
@@ -3954,7 +3857,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
           "one": "Kirgisischer Som",
           "other": "Kirgisische Som"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -4636,10 +4539,18 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "SKK",
         "symbol": "SKK"
       },
-      "SLL": {
+      "SLE": {
         "displayName": {
           "one": "Sierra-leonischer Leone",
           "other": "Sierra-leonische Leones"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "one": "Sierra-leonischer Leone (1964–2022)",
+          "other": "Sierra-leonische Leones (1964–2022)"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -5008,6 +4919,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "narrow": "$",
         "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
       },
       "XDR": {
         "displayName": {
@@ -7176,7 +7093,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
           "one": "Kyrgystani som",
           "other": "Kyrgystani soms"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -8300,6 +8217,14 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "$",
         "symbol": "EC$"
       },
+      "XCG": {
+        "displayName": {
+          "one": "Caribbean guilder",
+          "other": "Caribbean guilders"
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
       "XDR": {
         "displayName": {
           "other": "special drawing rights"
@@ -8506,10 +8431,17 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "ZWD",
         "symbol": "ZWD"
       },
+      "ZWG": {
+        "displayName": {
+          "other": "Zimbabwean gold"
+        },
+        "narrow": "ZWG",
+        "symbol": "ZWG"
+      },
       "ZWL": {
         "displayName": {
-          "one": "Zimbabwean dollar (2009)",
-          "other": "Zimbabwean dollars (2009)"
+          "one": "Zimbabwean dollar (2009–2024)",
+          "other": "Zimbabwean dollars (2009–2024)"
         },
         "narrow": "ZWL",
         "symbol": "ZWL"
@@ -10370,7 +10302,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "キルギス ソム"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -10893,7 +10825,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "RSD": {
         "displayName": {
-          "other": "ディナール (セルビア)"
+          "other": "セルビア ディナール"
         },
         "narrow": "RSD",
         "symbol": "RSD"
@@ -10996,9 +10928,16 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "SKK",
         "symbol": "SKK"
       },
-      "SLL": {
+      "SLE": {
         "displayName": {
           "other": "シエラレオネ レオン"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "シエラレオネ レオン (1964—2022)"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -11138,7 +11077,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "TRY": {
         "displayName": {
-          "other": "トルコリラ"
+          "other": "トルコ リラ"
         },
         "narrow": "₺",
         "symbol": "TRY"
@@ -11166,7 +11105,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "UAH": {
         "displayName": {
-          "other": "ウクライナ グリブナ"
+          "other": "ウクライナ フリヴニャ"
         },
         "narrow": "₴",
         "symbol": "UAH"
@@ -11345,6 +11284,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "narrow": "$",
         "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
       },
       "XDR": {
         "displayName": {
@@ -13311,7 +13256,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "키르기스스탄 솜"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -13916,9 +13861,16 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "SKK",
         "symbol": "SKK"
       },
-      "SLL": {
+      "SLE": {
         "displayName": {
           "other": "시에라리온 리온"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "시에라리온 리온(1964~2022)"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -14058,7 +14010,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "TRY": {
         "displayName": {
-          "other": "터키 리라"
+          "other": "튀르키예 리라"
         },
         "narrow": "₺",
         "symbol": "TRY"
@@ -14265,6 +14217,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "narrow": "$",
         "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
       },
       "XDR": {
         "displayName": {
@@ -14928,7 +14886,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0}리터"
           },
           "narrow": {
-            "other": "{0}ℓ"
+            "other": "{0}L"
           },
           "perUnit": {
             "long": "리터당 {0}",
@@ -16210,7 +16168,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "ซอมคีร์กีซสถาน"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -16829,9 +16787,16 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "SKK",
         "symbol": "SKK"
       },
-      "SLL": {
+      "SLE": {
         "displayName": {
           "other": "ลีโอนเซียร์ราลีโอน"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "ลีโอนเซียร์ราลีโอน (1964—2022)"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -17178,6 +17143,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "narrow": "$",
         "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
       },
       "XDR": {
         "displayName": {
@@ -19065,7 +19036,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "IDR": {
         "displayName": {
-          "other": "印度尼西亚盾"
+          "other": "印度尼西亚卢比"
         },
         "narrow": "Rp",
         "symbol": "IDR"
@@ -19172,7 +19143,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "吉尔吉斯斯坦索姆"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -19215,7 +19186,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
           "other": "韩元"
         },
         "narrow": "₩",
-        "symbol": "￦"
+        "symbol": "₩"
       },
       "KWD": {
         "displayName": {
@@ -20169,6 +20140,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "$",
         "symbol": "EC$"
       },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
       "XDR": {
         "displayName": {
           "other": "特别提款权"
@@ -20723,7 +20700,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0}g"
           },
           "perUnit": {
-            "long": "{0}/g",
+            "long": "每克{0}",
             "narrow": "{0}/g",
             "short": "{0}/g"
           },
@@ -21682,12 +21659,6 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "CNH",
         "symbol": "CNH"
       },
-      "CNX": {
-        "displayName": {
-        },
-        "narrow": "CNX",
-        "symbol": "CNX"
-      },
       "CNY": {
         "displayName": {
           "other": "人民幣"
@@ -22161,7 +22132,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "吉爾吉斯索姆"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -22787,9 +22758,16 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "SKK",
         "symbol": "SKK"
       },
-      "SLL": {
+      "SLE": {
         "displayName": {
           "other": "獅子山利昂"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
+      "SLL": {
+        "displayName": {
+          "other": "獅子山利昂 (1964—2022)"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -22859,7 +22837,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "SZL": {
         "displayName": {
-          "other": "史瓦濟蘭里朗吉尼"
+          "other": "史瓦帝尼朗吉尼"
         },
         "narrow": "SZL",
         "symbol": "SZL"
@@ -23136,6 +23114,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "narrow": "$",
         "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
       },
       "XDR": {
         "displayName": {
@@ -23617,7 +23601,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0} 液盎司"
           },
           "narrow": {
-            "other": "{0}fl-oz"
+            "other": "{0}液盎司"
           },
           "perUnit": {
           },
@@ -23646,11 +23630,11 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0} 加侖"
           },
           "narrow": {
-            "other": "{0}gal"
+            "other": "{0}加侖"
           },
           "perUnit": {
             "long": "每加侖 {0}",
-            "narrow": "{0}/gal",
+            "narrow": "{0}/加侖",
             "short": "{0}/加侖"
           },
           "short": {
@@ -23775,7 +23759,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0} 公斤"
           },
           "narrow": {
-            "other": "{0} 公斤"
+            "other": "{0}公斤"
           },
           "perUnit": {
             "long": "每公斤 {0}",
@@ -23836,7 +23820,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "每公里 {0} 公升"
           },
           "narrow": {
-            "other": "{0}L/km"
+            "other": "{0}升/公里"
           },
           "perUnit": {
           },
@@ -23917,7 +23901,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "每加侖 {0} 英里"
           },
           "narrow": {
-            "other": "{0}mpg"
+            "other": "{0}英里/加侖"
           },
           "perUnit": {
           },
@@ -23940,7 +23924,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         },
         "mile-scandinavian": {
           "long": {
-            "other": "{0} 斯堪地那維亞英里"
+            "other": "{0} 斯堪地那維亞里"
           },
           "narrow": {
             "other": "{0}smi"
@@ -23948,7 +23932,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
           "perUnit": {
           },
           "short": {
-            "other": "{0} 斯堪地那維亞英里"
+            "other": "{0} 斯堪地那維亞里"
           }
         },
         "milliliter": {
@@ -23956,7 +23940,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0} 毫升"
           },
           "narrow": {
-            "other": "{0}mL"
+            "other": "{0}毫升"
           },
           "perUnit": {
           },
@@ -24101,7 +24085,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0} 英石"
           },
           "narrow": {
-            "other": "{0}st"
+            "other": "{0}英石"
           },
           "perUnit": {
           },
@@ -25023,7 +25007,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
       },
       "IDR": {
         "displayName": {
-          "other": "印度尼西亚盾"
+          "other": "印度尼西亚卢比"
         },
         "narrow": "Rp",
         "symbol": "IDR"
@@ -25130,7 +25114,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "displayName": {
           "other": "吉尔吉斯斯坦索姆"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -25173,7 +25157,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
           "other": "韩元"
         },
         "narrow": "₩",
-        "symbol": "￦"
+        "symbol": "₩"
       },
       "KWD": {
         "displayName": {
@@ -26127,6 +26111,12 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
         "narrow": "$",
         "symbol": "EC$"
       },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
+      },
       "XDR": {
         "displayName": {
           "other": "特别提款权"
@@ -26681,7 +26671,7 @@ if (Intl.NumberFormat && typeof Intl.NumberFormat.__addLocaleData === 'function'
             "other": "{0}g"
           },
           "perUnit": {
-            "long": "{0}/g",
+            "long": "每克{0}",
             "narrow": "{0}/g",
             "short": "{0}/g"
           },

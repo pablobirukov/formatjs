@@ -796,7 +796,7 @@
       },
       "INR": {
         "displayName": {
-          "other": "ভারতীয় রুপি"
+          "other": "ভারতীয় টাকা"
         },
         "narrow": "₹",
         "symbol": "₹"
@@ -862,7 +862,7 @@
         "displayName": {
           "other": "কিরগিজস্তান সোম"
         },
-        "narrow": "KGS",
+        "narrow": "⃀",
         "symbol": "KGS"
       },
       "KHR": {
@@ -1447,9 +1447,16 @@
         "narrow": "SKK",
         "symbol": "SKK"
       },
+      "SLE": {
+        "displayName": {
+          "other": "সিয়েরা লিয়নের লিয়ন"
+        },
+        "narrow": "SLE",
+        "symbol": "SLE"
+      },
       "SLL": {
         "displayName": {
-          "other": "সিয়েরালিয়ন লিয়ন"
+          "other": "সিয়েরা লিয়নের লিয়ন (1964—2022)"
         },
         "narrow": "SLL",
         "symbol": "SLL"
@@ -1768,6 +1775,12 @@
         },
         "narrow": "$",
         "symbol": "EC$"
+      },
+      "XCG": {
+        "displayName": {
+        },
+        "narrow": "Cg.",
+        "symbol": "Cg."
       },
       "XEU": {
         "displayName": {
@@ -2316,9 +2329,9 @@
             "other": "{0} দিন"
           },
           "perUnit": {
-            "long": "{0} প্রতি দিন",
+            "long": "{0}/দিন",
             "narrow": "{0}/দিন",
-            "short": "{0} প্রতি দিন"
+            "short": "{0}/দিন"
           },
           "short": {
             "other": "{0} দিন"
@@ -2830,7 +2843,7 @@
           },
           "perUnit": {
             "long": "{0} প্রতি সেকেন্ড",
-            "narrow": "{0}/সে:",
+            "narrow": "{0}/সেঃ",
             "short": "{0} প্রতি সেকেন্ড"
           },
           "short": {

@@ -65,7 +65,7 @@ export const TIME_SEPARATORS = {
     },
     "ar": {
       "nu": [
-        "arab",
+        "latn",
         "latn"
       ]
     },
@@ -321,6 +321,11 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "bew": {
+      "nu": [
+        "latn"
+      ]
+    },
     "bez": {
       "nu": [
         "latn"
@@ -364,6 +369,11 @@ export const TIME_SEPARATORS = {
     "bho": {
       "nu": [
         "deva"
+      ]
+    },
+    "blo": {
+      "nu": [
+        "latn"
       ]
     },
     "blt": {
@@ -527,6 +537,11 @@ export const TIME_SEPARATORS = {
       ]
     },
     "cs": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "csw": {
       "nu": [
         "latn"
       ]
@@ -879,6 +894,11 @@ export const TIME_SEPARATORS = {
       ]
     },
     "en-HK": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "en-ID": {
       "nu": [
         "latn"
       ]
@@ -1941,6 +1961,11 @@ export const TIME_SEPARATORS = {
         "latn": "."
       }
     },
+    "ie": {
+      "nu": [
+        "latn"
+      ]
+    },
     "ig": {
       "nu": [
         "latn"
@@ -2021,6 +2046,21 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "kaa": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kaa-Cyrl": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kaa-Latn": {
+      "nu": [
+        "latn"
+      ]
+    },
     "kab": {
       "nu": [
         "latn"
@@ -2076,6 +2116,21 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "kk-Arab": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kk-Cyrl": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kk-KZ": {
+      "nu": [
+        "latn"
+      ]
+    },
     "kkj": {
       "nu": [
         "latn"
@@ -2106,12 +2161,27 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "ko-CN": {
+      "nu": [
+        "latn"
+      ]
+    },
     "ko-KP": {
       "nu": [
         "latn"
       ]
     },
     "kok": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kok-Deva": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kok-Latn": {
       "nu": [
         "latn"
       ]
@@ -2166,6 +2236,31 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "kxv": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kxv-Deva": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kxv-Latn": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kxv-Orya": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "kxv-Telu": {
+      "nu": [
+        "latn"
+      ]
+    },
     "ky": {
       "nu": [
         "latn"
@@ -2197,6 +2292,11 @@ export const TIME_SEPARATORS = {
       ]
     },
     "lkt": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "lld": {
       "nu": [
         "latn"
       ]
@@ -2242,6 +2342,11 @@ export const TIME_SEPARATORS = {
       ]
     },
     "lt": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "ltg": {
       "nu": [
         "latn"
       ]
@@ -2311,7 +2416,17 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "mhn": {
+      "nu": [
+        "latn"
+      ]
+    },
     "mi": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "mic": {
       "nu": [
         "latn"
       ]
@@ -2967,6 +3082,11 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "skr": {
+      "nu": [
+        "latn"
+      ]
+    },
     "sl": {
       "nu": [
         "latn"
@@ -3309,6 +3429,11 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "tyv": {
+      "nu": [
+        "latn"
+      ]
+    },
     "tzm": {
       "nu": [
         "latn"
@@ -3392,6 +3517,11 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "vmw": {
+      "nu": [
+        "latn"
+      ]
+    },
     "vo": {
       "nu": [
         "latn"
@@ -3428,6 +3558,11 @@ export const TIME_SEPARATORS = {
       ]
     },
     "xh": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "xnr": {
       "nu": [
         "latn"
       ]
@@ -3487,6 +3622,16 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "yue-Hant-CN": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "za": {
+      "nu": [
+        "latn"
+      ]
+    },
     "zgh": {
       "nu": [
         "latn"
@@ -3512,6 +3657,11 @@ export const TIME_SEPARATORS = {
         "latn"
       ]
     },
+    "zh-Hans-MY": {
+      "nu": [
+        "latn"
+      ]
+    },
     "zh-Hans-SG": {
       "nu": [
         "latn"
@@ -3528,6 +3678,16 @@ export const TIME_SEPARATORS = {
       ]
     },
     "zh-Hant-MO": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "zh-Hant-MY": {
+      "nu": [
+        "latn"
+      ]
+    },
+    "zh-Latn": {
       "nu": [
         "latn"
       ]

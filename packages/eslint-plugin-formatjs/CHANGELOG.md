@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.2](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.2.1...eslint-plugin-formatjs@5.2.2) (2024-11-05)
+
+**Note:** Version bump only for package eslint-plugin-formatjs
+
+## [5.2.1](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.2.0...eslint-plugin-formatjs@5.2.1) (2024-11-04)
+
+**Note:** Version bump only for package eslint-plugin-formatjs
+
+# [5.2.0](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.1.5...eslint-plugin-formatjs@5.2.0) (2024-11-02)
+
+### Features
+
+* **eslint-plugin-formatjs:** add recommended and strict shareable eslint config ([a4fc437](https://github.com/formatjs/formatjs/commit/a4fc4379700283448350b6982338f169f15d9bba)), closes [#4501](https://github.com/formatjs/formatjs/issues/4501) - by @longlho
+
+## [5.1.5](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.1.4...eslint-plugin-formatjs@5.1.5) (2024-10-25)
+
+### Bug Fixes
+
+* relax tslib req to 2 instead of 2.7 ([930c3e8](https://github.com/formatjs/formatjs/commit/930c3e8ddcc160fde7466449575455f135f78ca6)) - by @longlho
+
+## [5.1.4](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.1.3...eslint-plugin-formatjs@5.1.4) (2024-10-25)
+
+**Note:** Version bump only for package eslint-plugin-formatjs
+
+## [5.1.3](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.1.2...eslint-plugin-formatjs@5.1.3) (2024-10-24)
+
+### Bug Fixes
+
+* **deps:** update dependency commander to v12 ([#4621](https://github.com/formatjs/formatjs/issues/4621)) ([3c1d046](https://github.com/formatjs/formatjs/commit/3c1d0463e708b2b0bd4ff1b36a83479276b62e8f)) - by @renovate[bot]
+* **deps:** update dependency picomatch to v4 ([#4623](https://github.com/formatjs/formatjs/issues/4623)) ([9bed6b6](https://github.com/formatjs/formatjs/commit/9bed6b61146401f3339071f1530465263ef4eb70)) - by @renovate[bot]
+* **eslint-plugin-formatjs:** restore picomatch dep range ([dad1e7d](https://github.com/formatjs/formatjs/commit/dad1e7d3da10b897b7086b6676944c8ed10f2422)) - by @longlho
+
+## [5.1.2](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.1.1...eslint-plugin-formatjs@5.1.2) (2024-10-21)
+
+### Bug Fixes
+
+* **deps:** update dependency @types/picomatch to v3 ([#4618](https://github.com/formatjs/formatjs/issues/4618)) ([ce1e814](https://github.com/formatjs/formatjs/commit/ce1e814a62f714193685d75f0fc7316023ea6c3e)) - by @renovate[bot]
+
+## [5.1.1](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.1.0...eslint-plugin-formatjs@5.1.1) (2024-10-18)
+
+**Note:** Version bump only for package eslint-plugin-formatjs
+
 # [5.1.0](https://github.com/formatjs/formatjs/compare/eslint-plugin-formatjs@5.0.1...eslint-plugin-formatjs@5.1.0) (2024-10-12)
 
 ### Features

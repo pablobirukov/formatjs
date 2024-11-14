@@ -1,6 +1,6 @@
 {
   "name": "@formatjs/ecma376",
-  "version": "0.3.11",
+  "version": "0.3.13",
   "description": "generate ecma376 numFmt in different locales & currencies",
   "main": "index.js",
   "module": "lib/index.js",
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/formatjs/formatjs#readme",
   "dependencies": {
-    "tslib": "^2.7.0"
+    "tslib": "2"
   }
 }

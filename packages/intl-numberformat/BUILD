@@ -103,11 +103,84 @@ ts_compile(
     deps = SRC_DEPS,
 )
 
+UNIT_TEST_LOCALES = [
+    "en",
+    "en-GB",
+    "da",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "ms",
+    "nb",
+    "nl",
+    "pl",
+    "pt",
+    "ru",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "zh",
+    "en-BS",
+]
+
+LOCALE_TEST_TYPES = [
+    "currency",
+    "decimal",
+    "unit",
+    "percent",
+]
+
+[genrule(
+    name = "%s_test_update_snapshots_gen" % type,
+    srcs = ["scripts/update_snapshots.sh"],
+    outs = ["%s_test_update_snapshots.sh" % type],
+    cmd = """
+    cat $< > $@\n
+    """ + "\n".join(["echo 'bazel run //%s:%s_%s_test_update_snapshots' >> $@ " % (
+        package_name(),
+        type,
+        locale,
+    ) for locale in UNIT_TEST_LOCALES]),
+) for type in LOCALE_TEST_TYPES]
+
+[sh_binary(
+    name = "%s_test_update_snapshots" % type,
+    srcs = ["%s_test_update_snapshots.sh" % type],
+    data = ["scripts/update_snapshots.sh"],
+    deps = ["@bazel_tools//tools/bash/runfiles"],
+) for type in LOCALE_TEST_TYPES]
+
+[
+    [genrule(
+        name = "%s_%s_test_gen" % (type, locale),
+        srcs = [],
+        outs = ["tests/%s_%s.test.ts" % (type, locale)],
+        cmd = "echo 'import { test } from \"./%sTest\"; test(\"%s\");' > $@" % (type, locale),
+    ) for locale in UNIT_TEST_LOCALES]
+    for type in LOCALE_TEST_TYPES
+]
+
+[
+    [jest_test(
+        name = "%s_%s_test" % (type, locale),
+        data = [":srcs"] + TEST_DEPS + [
+            "tests/%sTest.ts" % type,
+            ":%s_%s_test_gen" % (type, locale),
+            "tests/locale-data/%s.json" % locale,
+        ],
+        snapshots = ["tests/__snapshots__/%s_%s.test.ts.snap" % (type, locale)],
+    ) for locale in UNIT_TEST_LOCALES]
+    for type in LOCALE_TEST_TYPES
+]
+
 [jest_test(
     name = "%s_test" % t.split("/")[-1].removesuffix(".test.ts"),
-    size = "large",
     data = [":srcs"] + TEST_DEPS + [t] + TEST_LOCALE_DATA,
-    snapshots = glob(["tests/__snapshots__/%s.*" % t.split("/")[-1]]),
 ) for t in TESTS]
 
 # CLDR

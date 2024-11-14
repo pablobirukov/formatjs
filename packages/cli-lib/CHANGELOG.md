@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.3](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.6.2...@formatjs/cli-lib@6.6.3) (2024-11-04)
+
+**Note:** Version bump only for package @formatjs/cli-lib
+
+## [6.6.2](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.6.1...@formatjs/cli-lib@6.6.2) (2024-11-02)
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22 ([#4658](https://github.com/formatjs/formatjs/issues/4658)) ([97233ea](https://github.com/formatjs/formatjs/commit/97233ea8c77e4d5e544d65c5dd181ab724b29c59)) - by @renovate[bot]
+
+## [6.6.1](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.6.0...@formatjs/cli-lib@6.6.1) (2024-10-25)
+
+### Bug Fixes
+
+* relax tslib req to 2 instead of 2.7 ([930c3e8](https://github.com/formatjs/formatjs/commit/930c3e8ddcc160fde7466449575455f135f78ca6)) - by @longlho
+
+# [6.6.0](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.5.3...@formatjs/cli-lib@6.6.0) (2024-10-25)
+
+### Features
+
+* upgrade cldr to v46 ([daafb44](https://github.com/formatjs/formatjs/commit/daafb449ba2fc4553f5a484b969affa1529752db)) - by @longlho
+
+## [6.5.3](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.5.2...@formatjs/cli-lib@6.5.3) (2024-10-25)
+
+### Bug Fixes
+
+* **@formatjs/cli-lib:** bump down chalk to v4 ([5fb690f](https://github.com/formatjs/formatjs/commit/5fb690f62e1a42b0626b506a9c756b6c624a394e)) - by @longlho
+
+## [6.5.2](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.5.1...@formatjs/cli-lib@6.5.2) (2024-10-24)
+
+### Bug Fixes
+
+* **@formatjs/cli-lib:** restore fs-extra dep range ([babff2f](https://github.com/formatjs/formatjs/commit/babff2fa5cbd14ad3eed4154e12dd1c1ef9d438e)) - by @longlho
+* **deps:** update dependency commander to v12 ([#4621](https://github.com/formatjs/formatjs/issues/4621)) ([3c1d046](https://github.com/formatjs/formatjs/commit/3c1d0463e708b2b0bd4ff1b36a83479276b62e8f)) - by @renovate[bot]
+* **deps:** update dependency fs-extra to v11 ([#4622](https://github.com/formatjs/formatjs/issues/4622)) ([5d798af](https://github.com/formatjs/formatjs/commit/5d798afb48bf640e86adeb1d36d46e90880fa2a6)) - by @renovate[bot]
+
+## [6.5.1](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.5.0...@formatjs/cli-lib@6.5.1) (2024-10-21)
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20 ([#4617](https://github.com/formatjs/formatjs/issues/4617)) ([80f8055](https://github.com/formatjs/formatjs/commit/80f80559989b7f4549f20ad9ebfa90e838c8b2ac)) - by @renovate[bot]
+
+# [6.5.0](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.4.5...@formatjs/cli-lib@6.5.0) (2024-10-18)
+
+### Features
+
+* **@formatjs/cli-lib:** add ignoreTag parser option to the compile command ([#4578](https://github.com/formatjs/formatjs/issues/4578)) ([14012c7](https://github.com/formatjs/formatjs/commit/14012c729aa243e22b45c1d74b2e72e589b14801)) - by @BlueCutOfficial
+
 ## [6.4.5](https://github.com/formatjs/formatjs/compare/@formatjs/cli-lib@6.4.3...@formatjs/cli-lib@6.4.5) (2024-10-12)
 
 **Note:** Version bump only for package @formatjs/cli-lib

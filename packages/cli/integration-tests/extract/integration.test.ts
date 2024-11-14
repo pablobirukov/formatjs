@@ -1,7 +1,6 @@
 import {exec as nodeExec} from 'child_process'
-import {mkdirp, readJSON} from 'fs-extra'
+import {mkdirp, readJSON, remove} from 'fs-extra'
 import {join, resolve} from 'path'
-import {rimraf} from 'rimraf'
 import {promisify} from 'util'
 const exec = promisify(nodeExec)
 
@@ -10,7 +9,7 @@ const ARTIFACT_PATH = resolve(__dirname, 'test_artifacts')
 
 beforeEach(async () => {
   await mkdirp(join(__dirname, 'test_artifacts'))
-  await rimraf(ARTIFACT_PATH)
+  await remove(ARTIFACT_PATH)
 })
 
 test('basic case: help', async () => {
@@ -251,5 +250,21 @@ test('TypeScript 4.7 syntax', async () => {
 
   expect(
     await readJSON(join(ARTIFACT_PATH, 'typescript/ts47.json'))
+  ).toMatchSnapshot()
+})
+
+// https://github.com/formatjs/formatjs/issues/4489
+test('import meta', async () => {
+  await expect(
+    exec(
+      `${BIN_PATH} extract --throws '${join(
+        __dirname,
+        'typescript/importMeta.mts'
+      )}' --out-file ${ARTIFACT_PATH}/typescript/importMeta.json`
+    )
+  ).resolves.toMatchSnapshot()
+
+  expect(
+    await readJSON(join(ARTIFACT_PATH, 'typescript/importMeta.json'))
   ).toMatchSnapshot()
 })

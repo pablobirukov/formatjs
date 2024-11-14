@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:recommended"],
   "ignorePaths": [
     "**/node_modules/**",
     "packages/react-intl/example-sandboxes/**"
@@ -9,6 +9,11 @@
     {
       "matchManagers": ["cargo"],
       "enabled": false
+    },
+    {
+      "description": "Automerge non-major updates",
+      "matchUpdateTypes": ["major", "minor", "patch"],
+      "automerge": true
     }
   ]
 }

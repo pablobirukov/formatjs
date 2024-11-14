@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.16.4](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.16.3...@formatjs/intl-datetimeformat@6.16.4) (2024-11-05)
+
+**Note:** Version bump only for package @formatjs/intl-datetimeformat
+
+## [6.16.3](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.16.2...@formatjs/intl-datetimeformat@6.16.3) (2024-11-04)
+
+**Note:** Version bump only for package @formatjs/intl-datetimeformat
+
+## [6.16.2](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.16.1...@formatjs/intl-datetimeformat@6.16.2) (2024-11-02)
+
+**Note:** Version bump only for package @formatjs/intl-datetimeformat
+
+## [6.16.1](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.16.0...@formatjs/intl-datetimeformat@6.16.1) (2024-10-25)
+
+### Bug Fixes
+
+* relax tslib req to 2 instead of 2.7 ([930c3e8](https://github.com/formatjs/formatjs/commit/930c3e8ddcc160fde7466449575455f135f78ca6)) - by @longlho
+
+# [6.16.0](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.15.0...@formatjs/intl-datetimeformat@6.16.0) (2024-10-25)
+
+### Features
+
+* upgrade cldr to v46 ([daafb44](https://github.com/formatjs/formatjs/commit/daafb449ba2fc4553f5a484b969affa1529752db)) - by @longlho
+
+# [6.15.0](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.14.0...@formatjs/intl-datetimeformat@6.15.0) (2024-10-21)
+
+### Bug Fixes
+
+* **@formatjs/intl-datetimeformat:** set proper toLocaleString/toLocalDateString/toLocaleTimeString default value, fix [#4589](https://github.com/formatjs/formatjs/issues/4589) ([0103425](https://github.com/formatjs/formatjs/commit/01034254682993a63551a09b4a771ff41a3975b8)) - by @longlho
+
+### Features
+
+* upgrade cldr to v45 ([#4620](https://github.com/formatjs/formatjs/issues/4620)) ([fbb2bbf](https://github.com/formatjs/formatjs/commit/fbb2bbf6e038d5833c1f2752b805002436480948)) - by @longlho
+
 # [6.14.0](https://github.com/formatjs/formatjs/compare/@formatjs/intl-datetimeformat@6.12.6...@formatjs/intl-datetimeformat@6.14.0) (2024-10-12)
 
 ### Features

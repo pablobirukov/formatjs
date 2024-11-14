@@ -1,6 +1,6 @@
 {
   "name": "@formatjs/intl-pluralrules",
-  "version": "5.2.16",
+  "version": "5.3.4",
   "description": "Polyfill for Intl.PluralRules",
   "keywords": [
     "polyfill",
@@ -22,7 +22,7 @@
   "dependencies": {
     "@formatjs/ecma402-abstract": "workspace:*",
     "@formatjs/intl-localematcher": "workspace:*",
-    "tslib": "^2.7.0"
+    "tslib": "2"
   },
   "devDependencies": {
     "@formatjs/intl-getcanonicallocales": "workspace:*",

@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.8](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.7...@formatjs/cli@6.3.8) (2024-11-05)
+
+**Note:** Version bump only for package @formatjs/cli
+
+## [6.3.7](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.6...@formatjs/cli@6.3.7) (2024-11-04)
+
+**Note:** Version bump only for package @formatjs/cli
+
+## [6.3.6](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.5...@formatjs/cli@6.3.6) (2024-11-02)
+
+**Note:** Version bump only for package @formatjs/cli
+
+## [6.3.5](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.4...@formatjs/cli@6.3.5) (2024-10-25)
+
+**Note:** Version bump only for package @formatjs/cli
+
+## [6.3.4](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.3...@formatjs/cli@6.3.4) (2024-10-25)
+
+**Note:** Version bump only for package @formatjs/cli
+
+## [6.3.3](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.2...@formatjs/cli@6.3.3) (2024-10-25)
+
+**Note:** Version bump only for package @formatjs/cli
+
+## [6.3.2](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.1...@formatjs/cli@6.3.2) (2024-10-24)
+
+### Bug Fixes
+
+* **deps:** update dependency commander to v12 ([#4621](https://github.com/formatjs/formatjs/issues/4621)) ([3c1d046](https://github.com/formatjs/formatjs/commit/3c1d0463e708b2b0bd4ff1b36a83479276b62e8f)) - by @renovate[bot]
+
+## [6.3.1](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.3.0...@formatjs/cli@6.3.1) (2024-10-21)
+
+**Note:** Version bump only for package @formatjs/cli
+
+# [6.3.0](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.2.15...@formatjs/cli@6.3.0) (2024-10-18)
+
+### Features
+
+* **@formatjs/cli-lib:** add ignoreTag parser option to the compile command ([#4578](https://github.com/formatjs/formatjs/issues/4578)) ([14012c7](https://github.com/formatjs/formatjs/commit/14012c729aa243e22b45c1d74b2e72e589b14801)) - by @BlueCutOfficial
+
 ## [6.2.15](https://github.com/formatjs/formatjs/compare/@formatjs/cli@6.2.13...@formatjs/cli@6.2.15) (2024-10-12)
 
 **Note:** Version bump only for package @formatjs/cli

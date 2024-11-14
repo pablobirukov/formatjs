@@ -68,7 +68,7 @@ export const timezones = {
     "Australia/Darwin",
     "Australia/Eucla",
     "Australia/Hobart",
-    "Australia/Currie",
+    "Australia/Hobart",
     "Australia/Lindeman",
     "Australia/Lord_Howe",
     "Australia/Melbourne",
@@ -157,7 +157,7 @@ export const timezones = {
   "ca": [
     "America/Creston",
     "America/Edmonton",
-    "America/Rainy_River",
+    "America/Winnipeg",
     "America/Fort_Nelson",
     "America/Glace_Bay",
     "America/Goose_Bay",
@@ -165,12 +165,12 @@ export const timezones = {
     "America/Iqaluit",
     "America/Moncton",
     "America/Toronto",
-    "America/Nipigon",
-    "America/Pangnirtung",
+    "America/Toronto",
+    "America/Iqaluit",
     "America/Resolute",
     "America/Regina",
     "America/St_Johns",
-    "America/Thunder_Bay",
+    "America/Toronto",
     "America/Toronto",
     "America/Vancouver",
     "America/Winnipeg",
@@ -182,7 +182,7 @@ export const timezones = {
     "America/Inuvik",
     "America/Whitehorse",
     "America/Swift_Current",
-    "America/Yellowknife",
+    "America/Edmonton",
     "America/Coral_Harbour"
   ],
   "cc": [
@@ -229,7 +229,7 @@ export const timezones = {
     "America/Costa_Rica"
   ],
   "cs": [
-    "CST6CDT"
+    "America/Chicago"
   ],
   "cu": [
     "America/Havana"
@@ -286,7 +286,7 @@ export const timezones = {
     "Africa/Ceuta",
     "Atlantic/Canary",
     "Europe/Madrid",
-    "EST5EDT"
+    "America/New_York"
   ],
   "et": [
     "Africa/Addis_Ababa"
@@ -541,7 +541,7 @@ export const timezones = {
     "Asia/Rangoon"
   ],
   "mn": [
-    "Asia/Choibalsan",
+    "Asia/Ulaanbaatar",
     "Asia/Hovd",
     "Asia/Ulaanbaatar"
   ],
@@ -559,7 +559,7 @@ export const timezones = {
   ],
   "ms": [
     "America/Montserrat",
-    "MST7MDT"
+    "America/Denver"
   ],
   "mt": [
     "Europe/Malta"
@@ -585,7 +585,7 @@ export const timezones = {
     "America/Mazatlan",
     "America/Ojinaga",
     "America/Bahia_Banderas",
-    "America/Santa_Isabel",
+    "America/Tijuana",
     "America/Tijuana"
   ],
   "my": [
@@ -669,7 +669,7 @@ export const timezones = {
     "America/Puerto_Rico"
   ],
   "ps": [
-    "PST8PDT"
+    "America/Los_Angeles"
   ],
   "pt": [
     "Atlantic/Madeira",
@@ -838,16 +838,16 @@ export const timezones = {
   ],
   "ua": [
     "Europe/Kiev",
-    "Europe/Zaporozhye",
+    "Europe/Kiev",
     "Europe/Simferopol",
-    "Europe/Uzhgorod"
+    "Europe/Kiev"
   ],
   "ug": [
     "Africa/Kampala"
   ],
   "um": [
     "Pacific/Wake",
-    "Pacific/Johnston",
+    "Pacific/Honolulu",
     "Pacific/Midway"
   ],
   "un": [

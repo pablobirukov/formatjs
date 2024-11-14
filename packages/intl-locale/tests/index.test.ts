@@ -28,7 +28,7 @@ describe('intl-locale', () => {
       ])
       expect(locale.getCollations()).toEqual(['compat', 'emoji', 'eor'])
       expect(locale.getHourCycles()).toEqual(['h12', 'h23'])
-      expect(locale.getNumberingSystems()).toEqual(['arab'])
+      expect(locale.getNumberingSystems()).toEqual(['latn', 'arab'])
       expect(locale.getTimeZones()).toBe(undefined)
     })
 
@@ -52,8 +52,8 @@ describe('intl-locale', () => {
     it('ar-SA', () => {
       const locale = new Locale('ar-SA')
       expect(locale.getCalendars()).toEqual([
-        'islamic-umalqura',
         'gregory',
+        'islamic-umalqura',
         'islamic',
         'islamic-rgsa',
       ])
@@ -113,5 +113,14 @@ test('getWeekInfo', function () {
     firstDay: 7,
     weekend: [6, 7],
     minimalDays: 1,
+  })
+})
+
+test('GH #4575', function () {
+  expect(new Locale('ar-sa').getTextInfo()).toEqual({
+    direction: 'rtl',
+  })
+  expect(new Locale('ar-sa').maximize().getTextInfo()).toEqual({
+    direction: 'rtl',
   })
 })

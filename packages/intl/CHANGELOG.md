@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.14](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.13...@formatjs/intl@2.10.14) (2024-11-05)
+
+**Note:** Version bump only for package @formatjs/intl
+
+## [2.10.13](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.12...@formatjs/intl@2.10.13) (2024-11-04)
+
+**Note:** Version bump only for package @formatjs/intl
+
+## [2.10.12](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.11...@formatjs/intl@2.10.12) (2024-11-02)
+
+**Note:** Version bump only for package @formatjs/intl
+
+## [2.10.11](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.10...@formatjs/intl@2.10.11) (2024-10-25)
+
+### Bug Fixes
+
+* relax tslib req to 2 instead of 2.7 ([930c3e8](https://github.com/formatjs/formatjs/commit/930c3e8ddcc160fde7466449575455f135f78ca6)) - by @longlho
+
+## [2.10.10](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.9...@formatjs/intl@2.10.10) (2024-10-25)
+
+**Note:** Version bump only for package @formatjs/intl
+
+## [2.10.9](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.8...@formatjs/intl@2.10.9) (2024-10-21)
+
+**Note:** Version bump only for package @formatjs/intl
+
 ## [2.10.8](https://github.com/formatjs/formatjs/compare/@formatjs/intl@2.10.6...@formatjs/intl@2.10.8) (2024-10-12)
 
 **Note:** Version bump only for package @formatjs/intl

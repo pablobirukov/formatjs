@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.12](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.11...vue-intl@6.5.12) (2024-11-05)
+
+**Note:** Version bump only for package vue-intl
+
+## [6.5.11](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.10...vue-intl@6.5.11) (2024-11-04)
+
+**Note:** Version bump only for package vue-intl
+
+## [6.5.10](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.9...vue-intl@6.5.10) (2024-11-02)
+
+**Note:** Version bump only for package vue-intl
+
+## [6.5.9](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.8...vue-intl@6.5.9) (2024-10-25)
+
+### Bug Fixes
+
+* relax tslib req to 2 instead of 2.7 ([930c3e8](https://github.com/formatjs/formatjs/commit/930c3e8ddcc160fde7466449575455f135f78ca6)) - by @longlho
+
+## [6.5.8](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.7...vue-intl@6.5.8) (2024-10-25)
+
+**Note:** Version bump only for package vue-intl
+
+## [6.5.7](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.6...vue-intl@6.5.7) (2024-10-21)
+
+**Note:** Version bump only for package vue-intl
+
 ## [6.5.6](https://github.com/formatjs/formatjs/compare/vue-intl@6.5.4...vue-intl@6.5.6) (2024-10-12)
 
 **Note:** Version bump only for package vue-intl

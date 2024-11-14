@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.22](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.21...@formatjs/ts-transformer@3.13.22) (2024-11-04)
+
+**Note:** Version bump only for package @formatjs/ts-transformer
+
+## [3.13.21](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.20...@formatjs/ts-transformer@3.13.21) (2024-11-02)
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v22 ([#4658](https://github.com/formatjs/formatjs/issues/4658)) ([97233ea](https://github.com/formatjs/formatjs/commit/97233ea8c77e4d5e544d65c5dd181ab724b29c59)) - by @renovate[bot]
+
+## [3.13.20](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.19...@formatjs/ts-transformer@3.13.20) (2024-10-25)
+
+### Bug Fixes
+
+* relax tslib req to 2 instead of 2.7 ([930c3e8](https://github.com/formatjs/formatjs/commit/930c3e8ddcc160fde7466449575455f135f78ca6)) - by @longlho
+
+## [3.13.19](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.18...@formatjs/ts-transformer@3.13.19) (2024-10-25)
+
+**Note:** Version bump only for package @formatjs/ts-transformer
+
+## [3.13.18](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.17...@formatjs/ts-transformer@3.13.18) (2024-10-24)
+
+**Note:** Version bump only for package @formatjs/ts-transformer
+
+## [3.13.17](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.16...@formatjs/ts-transformer@3.13.17) (2024-10-21)
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v20 ([#4617](https://github.com/formatjs/formatjs/issues/4617)) ([80f8055](https://github.com/formatjs/formatjs/commit/80f80559989b7f4549f20ad9ebfa90e838c8b2ac)) - by @renovate[bot]
+
 ## [3.13.16](https://github.com/formatjs/formatjs/compare/@formatjs/ts-transformer@3.13.14...@formatjs/ts-transformer@3.13.16) (2024-10-12)
 
 **Note:** Version bump only for package @formatjs/ts-transformer
