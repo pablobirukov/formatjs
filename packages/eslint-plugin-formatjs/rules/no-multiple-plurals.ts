@@ -65,7 +65,7 @@ export const rule: RuleModule<MessageIds> = {
     type: 'problem',
     docs: {
       description: 'Disallow multiple plural rules in the same message',
-      url: 'https://formatjs.io/docs/tooling/linter#no-multiple-plurals',
+      url: 'https://formatjs.github.io/docs/tooling/linter#no-multiple-plurals',
     },
     fixable: 'code',
     schema: [],
@@ -78,10 +78,11 @@ export const rule: RuleModule<MessageIds> = {
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node)
 
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (getParserServices(context).defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
-      return getParserServices(context).defineTemplateBodyVisitor(
+      return parserServices.defineTemplateBodyVisitor(
         {
           CallExpression: callExpressionVisitor,
         },

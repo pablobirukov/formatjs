@@ -27,10 +27,7 @@ npm_package(
 SRCS = glob(["src/**/*.ts*"]) + ["index.ts"]
 
 SRC_DEPS = [
-    ":node_modules/@formatjs/ecma402-abstract",
     ":node_modules/@formatjs/icu-messageformat-parser",
-    ":node_modules/@formatjs/intl-displaynames",
-    ":node_modules/@formatjs/intl-listformat",
     ":node_modules/@formatjs/intl",
     ":node_modules/intl-messageformat",
     "//:node_modules/@types/hoist-non-react-statics",
@@ -47,8 +44,6 @@ TESTS = glob(
 )
 
 TEST_DEPS = SRC_DEPS + [
-    ":node_modules/@formatjs/intl-numberformat",
-    ":node_modules/@formatjs/intl-relativetimeformat",
     "//:node_modules/@testing-library/jest-dom",
     "//:node_modules/@testing-library/react",
     "//:node_modules/@types/aria-query",

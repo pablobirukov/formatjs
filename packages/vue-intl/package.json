@@ -1,13 +1,13 @@
 {
   "name": "vue-intl",
-  "version": "6.5.12",
+  "version": "6.5.15",
   "description": "formatjs intl binding for vue",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/formatjs/formatjs.git"
   },
-  "homepage": "https://formatjs.io/docs/vue-intl",
+  "homepage": "https://formatjs.github.io/docs/vue-intl",
   "keywords": [
     "vue",
     "intl",

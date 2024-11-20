@@ -48,7 +48,7 @@ export const rule: RuleModule<MessageIds, Options> = {
     type: 'problem',
     docs: {
       description: 'Enforce defaultMessage in message descriptor',
-      url: 'https://formatjs.io/docs/tooling/linter#enforce-default-message',
+      url: 'https://formatjs.github.io/docs/tooling/linter#enforce-default-message',
     },
     fixable: 'code',
     schema: [
@@ -70,10 +70,11 @@ export const rule: RuleModule<MessageIds, Options> = {
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node)
 
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (getParserServices(context).defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
-      return getParserServices(context).defineTemplateBodyVisitor(
+      return parserServices.defineTemplateBodyVisitor(
         {
           CallExpression: callExpressionVisitor,
         },

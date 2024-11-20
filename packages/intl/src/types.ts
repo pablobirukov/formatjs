@@ -1,10 +1,5 @@
-import {DateTimeFormat, NumberFormatOptions} from '@formatjs/ecma402-abstract'
 import {MessageFormatElement} from '@formatjs/icu-messageformat-parser'
-import {DisplayNames, DisplayNamesOptions} from '@formatjs/intl-displaynames'
-import IntlListFormat, {
-  IntlListFormatOptions,
-  Part,
-} from '@formatjs/intl-listformat'
+
 import {
   FormatError,
   Formats,
@@ -21,6 +16,11 @@ import {
   UnsupportedFormatterError,
 } from './error'
 import {DEFAULT_INTL_CONFIG} from './utils'
+
+export interface Part<T = string> {
+  type: 'element' | 'literal'
+  value: T
+}
 
 // Note: FormatjsIntl is defined as a global namespace so the library user can
 // override the default types of Message.ids (e.g. as string literal unions from extracted strings)
@@ -92,7 +92,10 @@ export type FormatDateOptions = Omit<
   'localeMatcher'
 > &
   CustomFormatConfig<'date'>
-export type FormatNumberOptions = Omit<NumberFormatOptions, 'localeMatcher'> &
+export type FormatNumberOptions = Omit<
+  Intl.NumberFormatOptions,
+  'localeMatcher'
+> &
   CustomFormatConfig<'number'>
 export type FormatRelativeTimeOptions = Omit<
   Intl.RelativeTimeFormatOptions,
@@ -105,10 +108,10 @@ export type FormatPluralOptions = Omit<
 > &
   CustomFormatConfig
 
-export type FormatListOptions = Omit<IntlListFormatOptions, 'localeMatcher'>
+export type FormatListOptions = Omit<Intl.ListFormatOptions, 'localeMatcher'>
 
 export type FormatDisplayNameOptions = Omit<
-  DisplayNamesOptions,
+  Intl.DisplayNamesOptions,
   'localeMatcher'
 >
 
@@ -119,8 +122,8 @@ export type FormatDisplayNameOptions = Omit<
 export interface IntlFormatters<TBase = unknown> {
   formatDateTimeRange(
     this: void,
-    from: Parameters<DateTimeFormat['formatRange']>[0],
-    to: Parameters<DateTimeFormat['formatRange']>[1],
+    from: Parameters<Intl.DateTimeFormat['formatRange']>[0],
+    to: Parameters<Intl.DateTimeFormat['formatRange']>[1],
     opts?: FormatDateOptions
   ): string
   formatDate(
@@ -205,7 +208,7 @@ export interface IntlFormatters<TBase = unknown> {
   ): Part[]
   formatDisplayName(
     this: void,
-    value: Parameters<DisplayNames['of']>[0],
+    value: Parameters<Intl.DisplayNames['of']>[0],
     opts: FormatDisplayNameOptions
   ): string | undefined
 }
@@ -214,11 +217,11 @@ export interface Formatters {
   getDateTimeFormat(
     this: void,
     ...args: ConstructorParameters<typeof Intl.DateTimeFormat>
-  ): DateTimeFormat
+  ): Intl.DateTimeFormat
   getNumberFormat(
     this: void,
     locales?: string | string[],
-    opts?: NumberFormatOptions
+    opts?: Intl.NumberFormatOptions
   ): Intl.NumberFormat
   getMessageFormat(
     this: void,
@@ -234,12 +237,12 @@ export interface Formatters {
   ): Intl.PluralRules
   getListFormat(
     this: void,
-    ...args: ConstructorParameters<typeof IntlListFormat>
-  ): IntlListFormat
+    ...args: ConstructorParameters<typeof Intl.ListFormat>
+  ): Intl.ListFormat
   getDisplayNames(
     this: void,
-    ...args: ConstructorParameters<typeof DisplayNames>
-  ): DisplayNames
+    ...args: ConstructorParameters<typeof Intl.DisplayNames>
+  ): Intl.DisplayNames
 }
 
 export interface IntlShape<T = string>
@@ -249,13 +252,13 @@ export interface IntlShape<T = string>
 }
 
 export interface IntlCache {
-  dateTime: Record<string, DateTimeFormat>
+  dateTime: Record<string, Intl.DateTimeFormat>
   number: Record<string, Intl.NumberFormat>
   message: Record<string, IntlMessageFormat>
   relativeTime: Record<string, Intl.RelativeTimeFormat>
   pluralRules: Record<string, Intl.PluralRules>
-  list: Record<string, IntlListFormat>
-  displayNames: Record<string, DisplayNames>
+  list: Record<string, Intl.ListFormat>
+  displayNames: Record<string, Intl.DisplayNames>
 }
 
 export interface MessageDescriptor {

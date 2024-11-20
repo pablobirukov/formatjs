@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/formatjs/formatjs/compare/react-intl@7.0.0...react-intl@7.0.1) (2024-11-18)
+
+### Bug Fixes
+
+* **react-intl:** remove @formatjs/ecma402-abstract, use native TS Intl typdefs ([289aa91](https://github.com/formatjs/formatjs/commit/289aa9142e4ee06ddc25e61d7b9a771486cdd8b3)) - by @longlho
+
+# [7.0.0](https://github.com/formatjs/formatjs/compare/react-intl@6.8.9...react-intl@7.0.0) (2024-11-18)
+
+### Features
+
+* **react-intl:** drop typescript@4 support ([12ecc1b](https://github.com/formatjs/formatjs/commit/12ecc1b36c7d86bd8bd7e7786f5565e5a5b80f88)) - by @longlho
+* **react-intl:** remove polyfill packages in deps ([31b832f](https://github.com/formatjs/formatjs/commit/31b832f9a24bff0776d66e35cf85f59de25ed3c3)) - by @longlho
+
+### BREAKING CHANGES
+
+* **react-intl:** This removes @formatjs/intl-displaynames & @formatjs/intl-listformat as
+deps which will reduce package size. However, this also means you'll
+need typescript@5 at least since that has new type defs for those native
+Intl APIs.
+
+## [6.8.9](https://github.com/formatjs/formatjs/compare/react-intl@6.8.8...react-intl@6.8.9) (2024-11-18)
+
+### Bug Fixes
+
+* remove sourceMap from tsconfig, fix [#4693](https://github.com/formatjs/formatjs/issues/4693) ([361d13b](https://github.com/formatjs/formatjs/commit/361d13b6d33236cff685c783e785a69ecbf963f6)) - by @longlho
+
+## [6.8.8](https://github.com/formatjs/formatjs/compare/react-intl@6.8.7...react-intl@6.8.8) (2024-11-17)
+
+**Note:** Version bump only for package react-intl
+
 ## [6.8.7](https://github.com/formatjs/formatjs/compare/react-intl@6.8.6...react-intl@6.8.7) (2024-11-05)
 
 ### Bug Fixes

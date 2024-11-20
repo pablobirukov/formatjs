@@ -90,7 +90,7 @@ export const rule: RuleModule<MessageIds, Options> = {
     docs: {
       description:
         'Enforce plural rules to always specify certain categories like `one`/`other`',
-      url: 'https://formatjs.io/docs/tooling/linter#enforce-plural-rules',
+      url: 'https://formatjs.github.io/docs/tooling/linter#enforce-plural-rules',
     },
     fixable: 'code',
     schema: [
@@ -117,10 +117,12 @@ export const rule: RuleModule<MessageIds, Options> = {
   create(context) {
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node)
+
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (getParserServices(context).defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
-      return getParserServices(context).defineTemplateBodyVisitor(
+      return parserServices.defineTemplateBodyVisitor(
         {
           CallExpression: callExpressionVisitor,
         },

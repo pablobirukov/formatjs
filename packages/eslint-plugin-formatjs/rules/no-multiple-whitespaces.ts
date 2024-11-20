@@ -149,7 +149,7 @@ export const rule: RuleModule<MessageIds> = {
     docs: {
       description:
         'Prevents usage of multiple consecutive whitespaces in message',
-      url: 'https://formatjs.io/docs/tooling/linter#no-multiple-whitespaces',
+      url: 'https://formatjs.github.io/docs/tooling/linter#no-multiple-whitespaces',
     },
     messages: {
       noMultipleWhitespaces: 'Multiple consecutive whitespaces are not allowed',
@@ -163,10 +163,11 @@ export const rule: RuleModule<MessageIds> = {
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node)
 
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (getParserServices(context).defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
-      return getParserServices(context).defineTemplateBodyVisitor(
+      return parserServices.defineTemplateBodyVisitor(
         {
           CallExpression: callExpressionVisitor,
         },

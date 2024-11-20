@@ -140,7 +140,7 @@ export const rule: RuleModule<MessageIds, Options> = {
     type: 'problem',
     docs: {
       description: 'Enforce (generated) ID in message descriptor',
-      url: 'https://formatjs.io/docs/tooling/linter#enforce-id',
+      url: 'https://formatjs.github.io/docs/tooling/linter#enforce-id',
     },
     fixable: 'code',
     schema: [
@@ -200,10 +200,11 @@ Actual: {{actual}}`,
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node, opts)
 
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (getParserServices(context).defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
-      return getParserServices(context).defineTemplateBodyVisitor(
+      return parserServices.defineTemplateBodyVisitor(
         {
           CallExpression: callExpressionVisitor,
         },

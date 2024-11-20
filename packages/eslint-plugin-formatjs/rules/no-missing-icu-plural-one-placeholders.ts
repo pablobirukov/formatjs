@@ -115,7 +115,7 @@ export const rule: RuleModule<MessageIds, Options> = {
     docs: {
       description:
         'We use `one {# item}` instead of `one {1 item}` in ICU messages as some locales use the `one` formatting for other similar numbers.',
-      url: 'https://formatjs.io/docs/tooling/linter#no-explicit-icu-plural',
+      url: 'https://formatjs.github.io/docs/tooling/linter#no-explicit-icu-plural',
     },
     fixable: 'code',
     messages: {
@@ -128,10 +128,10 @@ export const rule: RuleModule<MessageIds, Options> = {
   create(context) {
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node)
-    const parserServices = getParserServices(context)
 
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (parserServices.defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
       return parserServices.defineTemplateBodyVisitor(
         {

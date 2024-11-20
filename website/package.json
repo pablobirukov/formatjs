@@ -14,13 +14,16 @@
       "last 1 safari version"
     ]
   },
+  "scripts": {
+    "build": "docusaurus build"
+  },
   "devDependencies": {
-    "@docusaurus/core": "3.6.1",
-    "@docusaurus/plugin-google-analytics": "3.6.1",
-    "@docusaurus/preset-classic": "3.6.1",
-    "@docusaurus/theme-common": "3.6.1",
-    "@docusaurus/theme-live-codeblock": "3.6.1",
-    "@docusaurus/types": "3.6.1",
+    "@docusaurus/core": "3.6.2",
+    "@docusaurus/plugin-google-analytics": "3.6.2",
+    "@docusaurus/preset-classic": "3.6.2",
+    "@docusaurus/theme-common": "3.6.2",
+    "@docusaurus/theme-live-codeblock": "3.6.2",
+    "@docusaurus/types": "3.6.2",
     "@formatjs/icu-messageformat-parser": "workspace:*",
     "@mdx-js/react": "3.1.0",
     "@orama/plugin-docusaurus-v3": "3.0.1",
@@ -29,7 +32,7 @@
     "intl-messageformat": "workspace:*",
     "prism-react-renderer": "2.4.0",
     "react-intl": "workspace:*",
-    "react-live": "4.1.7",
+    "react-live": "4.1.8",
     "typescript": "5"
   }
 }

@@ -11,6 +11,7 @@ packages/ecma376/node_modules
 packages/ecma402-abstract/node_modules
 packages/editor/node_modules
 packages/eslint-plugin-formatjs/node_modules
+packages/eslint-plugin-formatjs/integration-tests/node_modules
 packages/fast-memoize/node_modules
 packages/icu-messageformat-parser/integration-tests/node_modules
 packages/icu-messageformat-parser/node_modules
@@ -33,8 +34,6 @@ packages/intl/node_modules
 packages/react-intl/examples/node_modules
 packages/react-intl/integration-tests/node_modules
 packages/react-intl/node_modules
-packages/swc-plugin-experimental/node_modules
-packages/swc-plugin/node_modules
 packages/ts-transformer/integration-tests/node_modules
 packages/ts-transformer/node_modules
 packages/utils/node_modules

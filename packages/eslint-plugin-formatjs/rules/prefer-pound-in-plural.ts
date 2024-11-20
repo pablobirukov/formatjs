@@ -225,7 +225,7 @@ export const rule: RuleModule<MessageIds> = {
     docs: {
       description:
         'Prefer using # to reference the count in the plural argument.',
-      url: 'https://formatjs.io/docs/tooling/linter#prefer-pound-in-plurals',
+      url: 'https://formatjs.github.io/docs/tooling/linter#prefer-pound-in-plurals',
     },
     messages: {
       preferPoundInPlurals:
@@ -241,10 +241,11 @@ export const rule: RuleModule<MessageIds> = {
     const callExpressionVisitor = (node: TSESTree.Node) =>
       checkNode(context, node)
 
+    const parserServices = getParserServices(context)
     //@ts-expect-error defineTemplateBodyVisitor exists in Vue parser
-    if (getParserServices(context).defineTemplateBodyVisitor) {
+    if (parserServices?.defineTemplateBodyVisitor) {
       //@ts-expect-error
-      return getParserServices(context).defineTemplateBodyVisitor(
+      return parserServices.defineTemplateBodyVisitor(
         {
           CallExpression: callExpressionVisitor,
         },
